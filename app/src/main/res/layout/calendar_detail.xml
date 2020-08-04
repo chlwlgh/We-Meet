@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/edit_editname"
         android:layout_width="294dp"
         android:layout_height="46dp"
         android:layout_marginTop="124dp"
@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/edit_editmemo"
         android:layout_width="297dp"
         android:layout_height="252dp"
         android:layout_marginTop="60dp"
@@ -31,7 +31,7 @@
         android:text="메모"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_editname" />
 
     <Button
         android:id="@+id/btn_edit"

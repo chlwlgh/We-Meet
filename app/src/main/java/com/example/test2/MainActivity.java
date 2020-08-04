@@ -11,22 +11,19 @@ import android.widget.Button;
 import android.widget.CalendarView;
 import android.widget.TextView;
 
-import com.example.test2.databinding.ActivityMainBinding;
-
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    ActivityMainBinding binding;
+    CalendarView mCalendar;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+        setContentView(R.layout.activity_main);
+        mCalendar=findViewById(R.id.calendarView);
 
 
-        binding.calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
+        mCalendar.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
             public void onSelectedDayChange(@NonNull CalendarView calendarView, int y, int m,
                                             int d) {
